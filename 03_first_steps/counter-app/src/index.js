@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import FirstApp from './FirstApp'; // Importar el primer compomente
 
-const greeting = <h1>Hello World!</h1>; // H1 Con un saludo usando JSX
+import './index.css'; // Importar un archivo CSS
+
 const divRoot = document.querySelector('#root'); // Referencia el div principal de la aplicación
 
-ReactDOM.render(greeting, divRoot); // Escribimos nuestro saludo en el div principal de la aplicación
+ReactDOM.render(<FirstApp />, divRoot); // Escribir el contenido del componente en el div principal de la aplicación
