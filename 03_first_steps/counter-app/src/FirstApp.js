@@ -1,5 +1,6 @@
 // Functional Components
-import React from 'react'; // Se debe importar React donde se use JSX
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FirstApp = ({ otherMessage = 'No message' }) => { // Recibir propiedades
   const message = 'This is message in a variable';
@@ -12,5 +13,9 @@ const FirstApp = ({ otherMessage = 'No message' }) => { // Recibir propiedades
     </>
   );
 };
+
+FirstApp.propTypes = {
+  otherMessage: PropTypes.string.isRequired
+}
 
 export default FirstApp; // Exportamos nuestro componente
