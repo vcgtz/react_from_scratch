@@ -1,9 +1,14 @@
 // npm run tests -> Corre los tests
 
-test('first tests', () => {
-    const isTrue = false;
+describe('First group of tests', () => {
+  test('two strings are equal', () => {
+    // Inicialización
+    const message = 'Hello World';
 
-    if (!isTrue) {
-        throw new Error('Is false');
-    }
+    // Estimulo
+    const otherMessage = `Hello World`;
+
+    // Comprobación
+    expect(message).toBe(otherMessage);
+  });
 });
